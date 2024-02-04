@@ -171,6 +171,10 @@ padding-bottom: 70px;
 .col_light{
 color: #96bece; 
  }
+ .yo:hover{
+  color: #33ccff;
+
+ }
 .bg_back{
 background:#223f49eb;
  }
