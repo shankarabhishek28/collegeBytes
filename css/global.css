@@ -1,9 +1,13 @@
-/*
 
-*/
 .logo_anchor{
   width: 25%;
   height: 25%;
+}
+@media only screen and (max-width: 767px) {
+  .logo_anchor {
+    width: 50%; /* Adjust the width as needed for smaller screens */
+    height: 50%; /* Adjust the height proportionally */
+  }
 }
 .logo {
   width: 100%;
@@ -675,6 +679,7 @@ text-align:left;
  }
  }
 @media (min-width:768px) and (max-width:991px) {
+  
 .navbar-expand-md {
 flex-wrap:wrap!important;
 }
