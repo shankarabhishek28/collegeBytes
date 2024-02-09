@@ -1,4 +1,21 @@
 
+.setHeader{
+  background-color: #032e3f;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.sbtn{
+  background-color:#073760 ;
+  color: #00b9fd;
+}
+.sbtn:hover{
+  background-color: #0d248b;
+  color: white;
+}
+
 .logo_anchor{
   width: 25%;
   height: 25%;
@@ -184,7 +201,7 @@ background:#223f49eb;
  }
 /*********************top****************/
 #top{
-background: #0d67b5; 
+background: #00b9fd; 
  }
 .top_1l{
 background:#073760;
