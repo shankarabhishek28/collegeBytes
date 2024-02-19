@@ -245,8 +245,8 @@ Chennai.</a>
 							</div>
 						</div> -->
 						<div class="course_dt1l3 mt-4">
-							<h2 class="mb-3">About the College</h2>
-							<p>In 1940, Sri. M. C. Sivananda Sarma, a renowned freedom fighter, educator, and administrator laid the foundation of RV Educational Institutions to make high-quality education accessible to all. Since then, we have been at the forefront of discovery, innovation, and learning. Today, RV is one of India’s largest educational consortium with 20 institutions and 20,000+ students.
+<h2 class="mb-3">About the College</h2>
+							<div id="viewCounter">Views: <span id="count">0</span></div>							<p>In 1940, Sri. M. C. Sivananda Sarma, a renowned freedom fighter, educator, and administrator laid the foundation of RV Educational Institutions to make high-quality education accessible to all. Since then, we have been at the forefront of discovery, innovation, and learning. Today, RV is one of India’s largest educational consortium with 20 institutions and 20,000+ students.
                                 At RV, we understand that there exists a vast gap between what universities teach and what industries demand. And that’s why we started RVITM, a premier, Bangalore based engineering college with a singular vision — to prepare students for the world beyond classrooms.
 
 
@@ -262,6 +262,82 @@ engineers — it encourages them to be bold thinkers — challenging the status 
                                 We believe that this approach gives our students an edge over their contemporaries, enabling them to conquer the real world with confidence.
                                 
                                 </p>
+								
+								<table class="wp-block-table is-style-regular">
+									<tbody>
+										<tr>
+											<td style="text-align: center;">Established | Institute Type</td>
+											<td style="text-align: center;">2019 | Private</td>
+										</tr>
+										<tr>
+											<td style="text-align: center;">Approved by</td>
+											<td style="text-align: center;">AICTE</td>
+										</tr>
+										<tr>
+											<td style="text-align: center;">Affiliated to</td>
+											<td style="text-align: center;"><a href="https://collegedunia.com/university/25633-visvesvaraya-technological-university-vtu-belgaum" target="_blank">VTU, Belgaum</a></td>
+										</tr>
+										<tr>
+											<td style="text-align: center;">Entrance Exam</td>
+											<td style="text-align: center;"><strong>State:</strong>&nbsp;KEA CET/ COMEDK</td>
+										</tr>
+										<tr>
+											<td style="text-align: center;">Courses Offered</td>
+											<td style="text-align: center;">B.Tech/ B.E</td>
+										</tr>
+										<tr>
+											<td style="text-align: center;">Application Mode</td>
+											<td style="text-align: center;">Online &amp; Offline</td>
+										</tr>
+										<tr>
+											<td style="text-align: center;">Seats Available</td>
+											<td style="text-align: center;">300</td>
+										</tr>
+										<tr>
+											<td style="text-align: center;">Facilities Available</td>
+											<td style="text-align: center;">Library, Hostel, Sports, Laboratory, etc</td>
+										</tr>
+										<tr>
+											<td style="text-align: center;">Official Website</td>
+											<td style="text-align: center;"><span class="skimlinks-unlinked">https://www.rvitm.edu.in</span>/</td>
+										</tr>
+										<tr>
+											<td style="text-align: center;">Admission Helpdesk</td>
+											<td style="text-align: center;">080-35095100/ 104</td>
+										</tr>
+										<tr>
+											<td style="text-align: center;">Address</td>
+											<td style="text-align: center;">Chaithanya Layout, 8th Phase,<br>
+											JP Nagar, Bangalore, Karnataka 560076</td>
+										</tr>
+									</tbody>
+								</table>
+								<br>
+								<br>
+								<table class="wp-block-table is-style-regular">
+									<tbody>
+										<tr>
+											<td><strong>Course</strong></td>
+											<td><strong>Specialization</strong></td>
+											<td><strong>Eligibility</strong></td>
+										</tr>
+										<tr>
+											<td colspan="1" rowspan="4">B.Tech/ B.E</td>
+											<td>Computer Science &amp; Engineering</td>
+											<td colspan="1" rowspan="4">10+2 with a minimum of 60% aggregate marks + Obtained a valid score in KEA CET/ COMEDK</td>
+										</tr>
+										<tr>
+											<td>Information Science &amp; Engineering</td>
+										</tr>
+										<tr>
+											<td>Electronics &amp; Communication Engineering</td>
+										</tr>
+										<tr>
+											<td>Mechanical Engineering</td>
+										</tr>
+									</tbody>
+								</table>
+								
 							
 							<!-- <div class="course_dt1l3i row">
 								<div class="col-md-6">
@@ -609,6 +685,16 @@ Chennai</h6>
 	</section>
 
 	<script>
+		function increaseViewCount() {
+			var count = parseInt(localStorage.getItem("viewCount")) || 0;
+			count++;
+			localStorage.setItem("viewCount", count);
+			document.getElementById("count").innerText = count;
+		}
+
+		// Call the increaseViewCount function when the page loads
+		window.onload = increaseViewCount;
+
 		window.onscroll = function () { myFunction() };
 		var navbar_sticky = document.getElementById("navbar_sticky");
 		var sticky = navbar_sticky.offsetTop;

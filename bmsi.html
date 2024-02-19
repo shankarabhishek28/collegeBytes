@@ -233,8 +233,8 @@ Chennai.</a>
 							</div>
 						</div> -->
 						<div class="course_dt1l3 mt-4">
-							<h2 class="mb-3">About the College</h2>
-							<p>BMS Institutions takes pride in educating students since 1946 in various fields of Engineering and continues to provide world class education in the coming years with more emphasis on research and development. The history of BMS Educational Trust rewinds back to the year 1946 with the establishment of the first private engineering college in the country. BMSIT&M Alumni can be found all over the world.
+<h2 class="mb-3">About the College</h2>
+							<div id="viewCounter">Views: <span id="count">0</span></div>							<p>BMS Institutions takes pride in educating students since 1946 in various fields of Engineering and continues to provide world class education in the coming years with more emphasis on research and development. The history of BMS Educational Trust rewinds back to the year 1946 with the establishment of the first private engineering college in the country. BMSIT&M Alumni can be found all over the world.
                                 Computer Science and Business System (CSBS) is one of the popular courses among engineering aspirants which mainly focuses on computation, analysis of algorithms, programming languages, program design, software engineering, computer hardware, computer networks and problem solving skills.
                                 <b>BMS Institute of Technology and Management</b> has been accredited by National Assessment & Accreditation Council (NAAC) with CGPA of 3.21 with ‘A’ grade valid for a period of five years from September 12th, 2017. Subsequently, the validity has been extended up-to 31/12/2026. In pursuance of the action plan to monitor the attainment of Vision and Mission of the Institute, the National Assessment & Accreditation Council proposes that every Institution establish an Internal Quality Assurance Cell (IQAC) as a quality sustenance measure. Since quality enhancement is a continuous process, the IQAC will become a part of an institution's system and works towards realizing the goals of quality enhancement and sustenance. The prime task of the IQAC in BMSIT&M is to develop a system for conscious, consistent and catalytic improvement in the performance of various departments in the Institute. The IQAC will make a significant and meaningful contribution to channelize and systematize the efforts and measures of BMSIT&M towards academic excellence.
                             </p>
@@ -575,6 +575,16 @@ Chennai
 	</section>
 
 	<script>
+		function increaseViewCount() {
+			var count = parseInt(localStorage.getItem("viewCount")) || 0;
+			count++;
+			localStorage.setItem("viewCount", count);
+			document.getElementById("count").innerText = count;
+		}
+
+		// Call the increaseViewCount function when the page loads
+		window.onload = increaseViewCount;
+
 		window.onscroll = function () { myFunction() };
 		var navbar_sticky = document.getElementById("navbar_sticky");
 		var sticky = navbar_sticky.offsetTop;

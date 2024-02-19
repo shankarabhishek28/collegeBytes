@@ -1,4 +1,23 @@
 
+.wp-block-table.is-style-regular table {
+  border-collapse: collapse;
+  width: 100%;
+}
+svg{
+  width: 15px;
+  height: 15px;
+}
+.wp-block-table.is-style-regular th,
+.wp-block-table.is-style-regular td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.wp-block-table.is-style-regular th {
+  background-color: #f2f2f2;
+}
+
 .setHeader{
   background-color: #032e3f;
   color: white;

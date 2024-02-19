@@ -840,6 +840,16 @@
 	</section>
 
 	<script>
+		function increaseViewCount() {
+			var count = parseInt(localStorage.getItem("viewCount")) || 0;
+			count++;
+			localStorage.setItem("viewCount", count);
+			document.getElementById("count").innerText = count;
+		}
+
+		// Call the increaseViewCount function when the page loads
+		window.onload = increaseViewCount;
+
 		window.onscroll = function () { myFunction() };
 		var navbar_sticky = document.getElementById("navbar_sticky");
 		var sticky = navbar_sticky.offsetTop;
