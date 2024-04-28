@@ -1998,30 +1998,33 @@
 			</div>
 		</div>
 	</section>
-
 	<script>
-		 document.addEventListener("DOMContentLoaded", function() {
-    // Get the carousel element
-    const carousel = document.getElementById("carouselExampleCaptions1");
-    // Set the initial slide index
-    let slideIndex = 0;
-    // Set the interval to switch slides every 15 seconds (15000 milliseconds)
-    const interval = setInterval(function() {
-      // Increment the slide index
-      slideIndex++;
-      // If the slide index exceeds the number of slides, reset it to 0 (the first slide)
-      if (slideIndex >= carousel.querySelectorAll(".carousel-item").length) {
-        slideIndex = 0;
-      }
-      // Activate the next slide
-      carousel.querySelector(".carousel-item.active").classList.remove("active");
-      carousel.querySelectorAll(".carousel-item")[slideIndex].classList.add("active");
-      // Update the active indicator
-      const indicators = carousel.querySelectorAll(".carousel-indicators button");
-      indicators.forEach(indicator => indicator.classList.remove("active"));
-      indicators[slideIndex].classList.add("active");
-    }, 15000);
-  });
+		// Wait for the document to load
+		document.addEventListener("DOMContentLoaded", function() {
+		  // Get the carousel element
+		  const carousel = document.getElementById("carouselExampleCaptions1");
+		  // Set the initial slide index
+		  let slideIndex = 0;
+		  // Set the interval to switch slides every 15 seconds (15000 milliseconds)
+		  const interval = setInterval(function() {
+			// Increment the slide index
+			slideIndex++;
+			// If the slide index exceeds the number of slides, reset it to 0 (the first slide)
+			if (slideIndex >= carousel.querySelectorAll(".carousel-item").length) {
+			  slideIndex = 0;
+			}
+			// Activate the next slide
+			carousel.querySelector(".carousel-item.active").classList.remove("active");
+			carousel.querySelectorAll(".carousel-item")[slideIndex].classList.add("active");
+			// Update the active indicator
+			const indicators = carousel.querySelectorAll(".carousel-indicators button");
+			indicators.forEach(indicator => indicator.classList.remove("active"));
+			indicators[slideIndex].classList.add("active");
+		  }, 15000);
+		});
+	  </script>
+	<script>
+	
 		function increaseViewCount() {
 			var count = parseInt(localStorage.getItem("viewCount")) || 0;
 			count++;
