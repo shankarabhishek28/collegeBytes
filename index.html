@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<meta charset="utf-8">
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:title"
@@ -27,7 +27,7 @@
 	<meta property="og:site_name" content="btechadmissionsindia">
 
 
-<title>CollegeBytes - Your Guide to Top B.Tech Colleges and Scholarships in India</title>
+	<title>CollegeBytes - Your Guide to Top B.Tech Colleges and Scholarships in India</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/global.css" rel="stylesheet">
@@ -65,7 +65,7 @@
 									<span class="col_oran fs-2 float-start lh-1 me-3"><i style="color: #0d67b5;"
 											class="fa fa-phone"></i></span>
 									<h6 class=" lh-base" style="color: #0d67b5;">Call Now !<br>
-										<a class=" fw-bold" style="color: #0d67b5;" href="#">(+91) 9620445678</a>
+										<a class=" fw-bold" style="color: #0d67b5;" href="#">(+91) 9150877789</a>
 									</h6>
 								</div>
 							</div>
@@ -1627,18 +1627,13 @@
 				<div class="col-md-5">
 					<div class="faq_1r bg_blue pt-5 pb-5 px-4 rounded-3">
 						<h2 class="text-white mb-0">Make A Contact</h2>
-						<form action="mailto:ranitsingh36@gmail.com" method="POST" enctype="text/plain">
-							<input class="form-control mt-4 border-0 rounded-3" placeholder="First Name" type="text"
-								name="First Name: ">
-							<input class="form-control mt-4 border-0 rounded-3" placeholder="Email" type="email"
-								name="Email: ">
-							<input class="form-control mt-4 border-0 rounded-3" placeholder="Phone" type="tel"
-								name="Phone: ">
-							<textarea placeholder="Write Comments"
-								class="form-control mt-4 border-0 rounded-3 form_text" name="Comments: "></textarea>
-							<button type="submit" class="button_2">Submit Now <i
-									class="fa fa-long-arrow-right ms-1"></i></button>
-						</form>
+						<form action="https://formspree.io/f/mqkrodrz" method="POST">
+							<input class="form-control mt-4 border-0 rounded-3" placeholder="First Name" type="text" name="first_name" required>
+							<input class="form-control mt-4 border-0 rounded-3" placeholder="Email" type="email" name="email" required>
+							<input class="form-control mt-4 border-0 rounded-3" placeholder="Phone" type="tel" name="phone" required>
+							<textarea placeholder="Write Comments" class="form-control mt-4 border-0 rounded-3 form_text" name="comments" required></textarea>
+							<button type="submit" class="button_2">Submit Now <i class="fa fa-long-arrow-right ms-1"></i></button>
+						  </form>
 					</div>
 				</div>
 			</div>
@@ -1946,7 +1941,7 @@
 							</div>
 							<div class="col-md-10 col-10">
 								<div class="footer_1ririr">
-									<h6 class="mb-0  lh-base"><a class="col_light yo" href="#">(+91) 9620445678</a><br>
+									<h6 class="mb-0  lh-base"><a class="col_light yo" href="#">(+91) 9150877789</a><br>
 									</h6>
 								</div>
 							</div>
@@ -2000,31 +1995,32 @@
 	</section>
 	<script>
 		// Wait for the document to load
-		document.addEventListener("DOMContentLoaded", function() {
-		  // Get the carousel element
-		  const carousel = document.getElementById("carouselExampleCaptions1");
-		  // Set the initial slide index
-		  let slideIndex = 0;
-		  // Set the interval to switch slides every 15 seconds (15000 milliseconds)
-		  const interval = setInterval(function() {
-			// Increment the slide index
-			slideIndex++;
-			// If the slide index exceeds the number of slides, reset it to 0 (the first slide)
-			if (slideIndex >= carousel.querySelectorAll(".carousel-item").length) {
-			  slideIndex = 0;
-			}
-			// Activate the next slide
-			carousel.querySelector(".carousel-item.active").classList.remove("active");
-			carousel.querySelectorAll(".carousel-item")[slideIndex].classList.add("active");
-			// Update the active indicator
-			const indicators = carousel.querySelectorAll(".carousel-indicators button");
-			indicators.forEach(indicator => indicator.classList.remove("active"));
-			indicators[slideIndex].classList.add("active");
-		  }, 15000);
+		document.addEventListener("DOMContentLoaded", function () {
+			// Get the carousel element
+			const carousel = document.getElementById("carouselExampleCaptions1");
+			// Set the initial slide index
+			let slideIndex = 0;
+			// Set the interval to switch slides every 15 seconds (15000 milliseconds)
+			const interval = setInterval(function () {
+				// Increment the slide index
+				slideIndex++;
+				// If the slide index exceeds the number of slides, reset it to 0 (the first slide)
+				if (slideIndex >= carousel.querySelectorAll(".carousel-item").length) {
+					slideIndex = 0;
+				}
+				// Activate the next slide
+				carousel.querySelector(".carousel-item.active").classList.remove("active");
+				carousel.querySelectorAll(".carousel-item")[slideIndex].classList.add("active");
+				// Update the active indicator
+				const indicators = carousel.querySelectorAll(".carousel-indicators button");
+				indicators.forEach(indicator => indicator.classList.remove("active"));
+				indicators[slideIndex].classList.add("active");
+			}, 15000);
 		});
-	  </script>
-	<script>
+	</script>
 	
+	<script>
+
 		function increaseViewCount() {
 			var count = parseInt(localStorage.getItem("viewCount")) || 0;
 			count++;
@@ -2064,7 +2060,15 @@
 		}
 
 	</script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KXN4ZSNEJG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-KXN4ZSNEJG');
+</script>
 </body>
 
 </html>
